@@ -28,7 +28,7 @@ margin-right: 2rem;
 :first-child{
   padding: 0.7rem;
   border-radius: 10px;
-  color: #836767;
+  color: #912d2d;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;

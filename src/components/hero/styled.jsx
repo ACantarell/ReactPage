@@ -8,6 +8,12 @@ width: 100%;
 display: flex;
 justify-content: space-around;
 align-items: center;
+
+@media (max-width: 320px){
+  flex-direction: column;
+  justify-content: center;  
+  height: 20rem;
+}
 `
 
 export const HeroInfo = styled.div`
@@ -29,8 +35,19 @@ width: 50%;
   text-align: center;
   width: 80%;
 }
-:nth-child(3){
-  
+@media (max-width: 320px){
+  text-align: center;
+  width: 100%;
+  gap: 0.5rem;
+
+
+  :first-child{
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 }
 `
 
@@ -45,5 +62,8 @@ align-items: center;
   border-radius: 40%;
   padding: 2rem 0; 
   object-fit: cover;
+}
+@media (max-width: 320px){
+  display: none;
 }
 `

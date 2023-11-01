@@ -5,7 +5,7 @@ import { FaFacebook, FaSquareTwitter, FaSquareWhatsapp, FaSquareInstagram } from
 
 export const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer >
       <hr />
       <div>
         <FooterImg src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7rdzBNNJBTx6ah09DD7MMoNbrM167ysIOQ&usqp=CAU" alt="" />

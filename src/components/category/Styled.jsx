@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CategoryContainer = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 flex-wrap: wrap;
 gap: 1rem;
@@ -14,6 +14,13 @@ margin: 0 auto;
 }
 `
 export const ContainerButtons = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+width: 100%;
+max-width: 1300px;
+margin: 0 auto;
 @media (max-width: 320px){
   display: grid;
   grid-template-columns: repeat(1, 1fr);

@@ -1,18 +1,18 @@
 import React from 'react'
-import {CategoryContainer} from './Styled'
-import {Button} from '../button/Button'
+import {CategoryContainer, ContainerButtons} from './Styled'
+import {ButtonStyled} from '../button/Styled'
 
 export const Category = () => {
   return (
     <CategoryContainer>
         <h2>Categorias</h2>
-          <div>
-            <Button>Tigre</Button>
-            <button>León</button>
-            <button>Oso</button>
-            <button>Aguila</button>
-            <button>Mono</button>
-          </div>
+          <ContainerButtons>
+            <ButtonStyled>Tigre</ButtonStyled>
+            <ButtonStyled>León</ButtonStyled>
+            <ButtonStyled>Oso</ButtonStyled>
+            <ButtonStyled>Aguila</ButtonStyled>
+            <ButtonStyled>Mono</ButtonStyled>
+          </ContainerButtons>
     </CategoryContainer>
   )
 }

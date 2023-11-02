@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button } from './Styled'
+import { ButtonStyled } from './Styled'
 
-export const Button = ({childen}) => {
+export const ButtonCuston = ({childen}) => {
   return (
-    <button>{childen}</button>
+    <ButtonStyled>{childen}</ButtonStyled>
   )
 }

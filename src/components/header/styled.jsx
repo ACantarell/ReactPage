@@ -18,6 +18,9 @@ max-width: 320px;
 justify-content: center;
 margin: 1rem;
 }
+@media (max-width: 640px){
+  width: 100%;
+}
 
 `
 export const NavbarImg  = styled.img`
@@ -43,5 +46,6 @@ margin-right: 2rem;
 }
 @media (max-width: 320px){ 
   width: 100%;
+  display: none;
 }
 `

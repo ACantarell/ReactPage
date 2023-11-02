@@ -14,6 +14,20 @@ align-items: center;
   justify-content: center;  
   height: 20rem;
 }
+@media (max-width: 640px){
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px){
+  margin-bottom: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px){
+  
+}
 `
 
 export const HeroInfo = styled.div`
@@ -49,6 +63,32 @@ width: 50%;
   width: 100%;
 }
 }
+@media (max-width: 640px){
+  width: 100%;
+  gap: 0.5rem;
+
+  :first-child{
+  margin-top: 3rem;  
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+}
+@media (max-width: 768px){
+   width: 100%;
+  gap:1rem;
+
+  :first-child{
+  margin-top: 3rem;  
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+}
 `
 
 export const HeroImg = styled.div`
@@ -57,13 +97,20 @@ height: 700px;
 display: flex;
 justify-content: center;
 align-items: center;
+
 :first-child{
   width: 45%;
   border-radius: 40%;
-  padding: 2rem 0; 
+  padding: 1rem 0; 
   object-fit: cover;
 }
 @media (max-width: 320px){
   display: none;
+}
+@media (max-width: 640px){
+  width: 50%;
+}
+@media (max-width: 768px){
+  width: 50%;
 }
 `

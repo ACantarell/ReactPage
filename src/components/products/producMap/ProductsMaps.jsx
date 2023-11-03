@@ -1,7 +1,7 @@
 import React from 'react'
-import { ProductsData } from '../../../data/products'
 import { Product } from '../Product'
 import { ContainerMapCard } from './StyledMap'
+import { ProductsData } from '../../../data/products'
 
 
 

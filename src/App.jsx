@@ -3,7 +3,7 @@ import { HomeScren } from './screens/HomeScren'
 
 function App() {
   return (
-    <div>
+    <div> 
       <HomeScren/>
     </div>
       

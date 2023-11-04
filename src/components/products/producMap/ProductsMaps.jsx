@@ -1,7 +1,8 @@
 import React from 'react'
-import { Product } from '../Product'
+// import { Product } from '../Product'
 import { ContainerMapCard } from './StyledMap'
 import { Data } from '../../../data/Products'
+import  ExpandableCard  from '../../Card/Card'
 
 
 
@@ -10,7 +11,7 @@ export const ProductsMaps = () => {
 
         <ContainerMapCard>
         {
-          Data.map(product => <Product key={product.id} {...product}/>)            
+          Data.map(product => <ExpandableCard key={product.id} {...product}/>)            
         }
         </ContainerMapCard>
       

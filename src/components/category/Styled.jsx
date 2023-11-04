@@ -8,8 +8,9 @@ align-items: center;
 flex-wrap: wrap;
 gap: 1rem;
 width: 100%;
-max-width: 1300px;
-margin: 0 auto;
+max-width: 2000x;
+padding: 1rem 0;
+background-color: #bdb5bb53;
 @media (max-width: 320px){
 }
 `

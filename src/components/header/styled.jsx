@@ -67,7 +67,14 @@ height: 50px;
       margin-top: 1rem;
       color: white;
     }
+    @media (min-width: 1024px){
+      .active{
+        display: none;
+      }
+    }
+    
   }
+
   .burguer{
     @media(min-width: 768px){
         display: none;
@@ -91,6 +98,18 @@ height: 50px;
       color: white;
     }
   }
+   @media (min-width: 768px){
+      &.links.active{
+        display: none;
+      }
+    }
+
+  @media (min-width: 1024px){
+      &.active{
+        display: none;
+      }
+    }
+
   }
 `
 
@@ -135,6 +154,7 @@ export const BgDiv = styled.div`
     width: 100%;
     height: 100%;
   }
+ 
     
   }
 `

@@ -89,6 +89,10 @@ width: 50%;
   width: 100%;
 }
 }
+
+@media (max-width: 1024px){
+  width: 100%;
+}
 `
 
 export const HeroImg = styled.div`
@@ -104,13 +108,20 @@ align-items: center;
   padding: 1rem 0; 
   object-fit: cover;
 }
+
 @media (max-width: 320px){
   display: none;
 }
+
 @media (max-width: 640px){
-  width: 50%;
+  display: none;
 }
+
 @media (max-width: 768px){
-  width: 50%;
+  display: none;  
 }
+@media (max-width: 1024px){
+  display: none;
+}
+
 `

@@ -1,34 +1,32 @@
-import {ContainerNavbar, NavbarImg, NavbarLinks} from "./styled"
+import React, { useState } from 'react'
+import { BgDiv, NavContainer } from './styled'
+import { BurguerButton } from '../burguerButton/BurguerButton'
 
-export const Navbar = () => {
+
+export const  Navbar = () => {
+
+  const [clicked, setClicked] = useState(false)
+  const handleClick = () => {
+    //cuando esta true lo pasa a false y vice versa
+    setClicked(!clicked)
+  }
   return (
-    
-    <ContainerNavbar>
-      {/* Logo de la pagina */}
-      <div>
-        <a href="#">
-          <NavbarImg src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7rdzBNNJBTx6ah09DD7MMoNbrM167ysIOQ&usqp=CAU" alt="" />
-        </a>
-      </div>
-
-      {/* botonoes de la pagina */}
-      <div>
-        <NavbarLinks>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Products</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </NavbarLinks>
-      </div>
-
-    </ContainerNavbar>
+    <>
+      <NavContainer>
+        <h2>Animal <span>Potection</span></h2>
+        <div className={`links ${clicked ? 'active' : ''}`}>
+          <a onClick={handleClick} href="#h">Home</a>
+          <a onClick={handleClick} href="#h">Shop</a>
+          <a onClick={handleClick} href="#h">About</a>
+          <a onClick={handleClick} href="#h">Contact</a>
+          <a onClick={handleClick} href="#h">Blog</a>
+        </div>
+        <div className='burguer'>
+          <BurguerButton clicked={clicked} handleClick={handleClick} />
+        </div>
+        <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+      </NavContainer>
+    </>
   )
 }
+
